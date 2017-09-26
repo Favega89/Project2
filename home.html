@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Site</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+</head>
+  <body>
+    <div class="container-fluid">
+      <div class="col-md-9">
+        <div class= "col-md-offset-3">
+          <h1>Users Info:</h1>
+          <table name="table" id="tableUsuarios" class="display" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <td class="order" id=id>id</td>
+                <td class="order" id=user>user</td>
+                <td class="order" id=body>password</td>
+              </tr>
+            </thead>
+            <tbody id="posts">
+            </tbody>
+          </table>
+        </div>
+        <div class= "col-md-offset-3">
+          <form action="" method="post" id="formAjax" name="formAjax">
+            <div class="form-group">
+              <input type="text" id="mail" name="email" placeholder="Email" class="{required:true,email:true}"/>
+            </div>
+            <div class="form-group">
+              <input type="text" id="pass" name="contrasenia"placeholder="Contrasenia" class="{required:true}"/>
+            </div>
+            <input type="submit" class="btn btn-default" id="envioFormulario" name="envioFormulario"></input>
+          </form>
+          <div id="respuesta"></div>
+        </div>
+      </div>
+    </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+ <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/script.js"></script>
+ </body>
+</html>
