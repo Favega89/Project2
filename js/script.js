@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(function() {
   var count=0;
   $('#tableUsuarios').DataTable({
