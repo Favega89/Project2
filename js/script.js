@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 $(function() {
   var count=0;
   $('#tableUsuarios').DataTable({
@@ -13,11 +13,11 @@ $(function() {
   $("#formAjax").validate({
     rules:{
         email:{
-          //required:true,
-          //email:true
+          required:true,
+          email:true
         },
         contrasenia:{
-        //  required:true
+          required:true
         }
     },
     submitHandler:function(){
@@ -32,9 +32,9 @@ $(function() {
         if(response.id == "1"){
           count++;
           $("#posts").append('<tr><th class="idtable">'+ count + '</th><td>'+ response.email + '</td><td>'+ response.pass + '</td></tr>');
-          console.log(response.mensaje);
+          alert(response.mensaje);
         }else{
-          console.log(response.mensaje);
+          alert(response.mensaje);
         }
       })
     }
